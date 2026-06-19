@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Admission Support &amp; Services - MBBS Abroad</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=IBM+Plex+Sans:wght@400;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="style.css" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-bright": "#f8f9ff",
+                        "primary-fixed": "#d8e2ff",
+                        "background": "#f8f9ff",
+                        "surface-dim": "#cbdbf5",
+                        "outline": "#747781",
+                        "tertiary-container": "#00354c",
+                        "surface-container-highest": "#d3e4fe",
+                        "inverse-surface": "#213145",
+                        "on-tertiary-fixed": "#001e2d",
+                        "primary": "#001b44",
+                        "on-background": "#0b1c30",
+                        "inverse-primary": "#aec6ff",
+                        "error": "#ba1a1a",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#c6e7ff",
+                        "on-primary-fixed": "#001a42",
+                        "outline-variant": "#c4c6d2",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#3c5d9c",
+                        "surface-container-high": "#dce9ff",
+                        "on-primary-container": "#7999dc",
+                        "on-surface-variant": "#434750",
+                        "secondary-fixed": "#87fb9e",
+                        "surface-container": "#e5eeff",
+                        "primary-container": "#002f6c",
+                        "primary-fixed-dim": "#aec6ff",
+                        "secondary": "#006d30",
+                        "on-secondary-fixed": "#00210a",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-fixed-variant": "#004c6b",
+                        "surface-variant": "#d3e4fe",
+                        "inverse-on-surface": "#eaf1ff",
+                        "tertiary-fixed-dim": "#82cfff",
+                        "on-tertiary-container": "#00a4e1",
+                        "on-primary-fixed-variant": "#224583",
+                        "on-secondary-fixed-variant": "#005322",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary": "#001f2e",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary": "#ffffff",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#87fb9e",
+                        "secondary-fixed-dim": "#6add85",
+                        "on-secondary-container": "#007433",
+                        "on-primary": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "surface": "#f8f9ff"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "stack-sm": "8px",
+                        "container-max": "1280px",
+                        "stack-lg": "32px",
+                        "section-gap": "80px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "stack-md": "16px"
+                    },
+                    fontFamily: {
+                        "headline-md": ["Manrope"],
+                        "label-caps": ["IBM Plex Sans"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "display-lg-mobile": ["Manrope"],
+                        "headline-sm": ["Manrope"],
+                        "display-lg": ["Manrope"]
+                    },
+                    fontSize: {
+                        "headline-md": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "label-caps": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "body-lg": ["18px", { lineHeight: "28px", fontWeight: "400" }],
+                        "body-md": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "display-lg-mobile": ["32px", { lineHeight: "40px", fontWeight: "800" }],
+                        "headline-sm": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+                        "display-lg": ["48px", { lineHeight: "56px", letterSpacing: "-0.02em", fontWeight: "800" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+<!-- TopNavBar -->
+<nav class="bg-surface-lowest dark:bg-primary-container border-b border-outline-variant dark:border-outline shadow-sm docked full-width top-0 sticky z-50 transition-colors duration-200">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-headline-sm text-headline-sm font-extrabold text-primary dark:text-inverse-primary flex items-center gap-2" href="index.html">
+<span class="material-symbols-outlined icon-fill text-primary dark:text-inverse-primary" style="font-size: 32px;">medical_services</span>
+                MBBS Abroad
+            </a>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex items-center gap-6 font-label-caps text-label-caps">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-primary transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 duration-150" href="index.html">Home</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-primary transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 duration-150" href="index.html#about">About</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-primary transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 duration-150" href="universities.html">Universities</a></li>
+<li><a class="text-primary dark:text-secondary-fixed border-b-2 border-primary dark:border-secondary-fixed pb-1 px-3 py-2" href="services.html">Services</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary hover:bg-surface-container-low dark:hover:bg-primary transition-colors px-3 py-2 rounded-DEFAULT scale-95 active:scale-90 duration-150" href="contact.html">Contact</a></li>
+</ul>
+<!-- Actions -->
+<div class="flex items-center gap-4">
+<div class="hidden lg:flex items-center gap-3">
+<a class="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="mailto:admissions@mbbsabroad.com">
+<span class="material-symbols-outlined">mail</span>
+</a>
+<a class="p-2 text-on-surface-variant hover:text-primary transition-colors flex items-center justify-center" href="tel:7404868284">
+<span class="material-symbols-outlined">phone</span>
+</a>
+</div>
+<a class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-caps text-label-caps px-6 py-3 rounded-DEFAULT hover:bg-primary-container hover:text-on-primary-container transition-colors scale-95 active:scale-90 duration-150" href="tel:7404868284">
+                    Call: 7404868284
+                </a>
+<button id="open-nav" class="md:hidden p-2 text-on-surface hover:bg-surface-container-low rounded-full transition-colors flex items-center justify-center">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- SideNavBar (Mobile Only) -->
+<aside class="fixed left-0 top-0 h-full w-64 bg-surface-container-lowest dark:bg-inverse-surface shadow-xl dark:shadow-none flex flex-col md:hidden z-40 transform -translate-x-full transition-transform duration-300" id="mobile-sidebar">
+<div class="p-margin-mobile border-b border-outline-variant">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined icon-fill text-primary dark:text-secondary-fixed text-4xl">local_hospital</span>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-primary dark:text-secondary-fixed">MBBS Admission</h2>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Guiding Future Doctors</p>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-caps text-label-caps py-2 rounded-DEFAULT cta-book-btn">Free Counseling</button>
+</div>
+<nav class="flex-1 overflow-y-auto py-4">
+<ul class="font-body-md text-body-md space-y-1 px-2">
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="index.html">
+<span class="material-symbols-outlined">home</span>
+                        Home
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="universities.html">
+<span class="material-symbols-outlined">school</span>
+                        Universities
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 bg-secondary-container text-on-secondary-container rounded-full transition-colors" href="services.html">
+<span class="material-symbols-outlined icon-fill">assignment_turned_in</span>
+                        Admission Support
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="services.html#journey-timeline">
+<span class="material-symbols-outlined">library_books</span>
+                        Visa Help
+                    </a>
+</li>
+<li>
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="contact.html">
+<span class="material-symbols-outlined">contact_support</span>
+                        Contact Us
+                    </a>
+</li>
+</ul>
+</nav>
+<div class="p-margin-mobile border-t border-outline-variant">
+<a class="flex items-center gap-3 px-4 py-3 text-on-surface-variant hover:bg-surface-container-high rounded-full transition-colors" href="https://wa.me/917404868284?text=Hi%2C%20I%20am%20interested%20in%20MBBS%20Admission%20Abroad." target="_blank">
+<span class="material-symbols-outlined">chat</span>
+                WhatsApp Support
+            </a>
+</div>
+</aside>
+<main class="w-full flex-grow">
+<!-- Hero Section for Services -->
+<section class="relative bg-primary overflow-hidden">
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+<svg height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="40" id="grid" patternunits="userSpaceOnUse" width="40">
+<path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid)" height="100%" width="100%"></rect>
+</svg>
+</div>
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap relative z-10 grid grid-cols-1 md:grid-cols-2 gap-stack-lg items-center">
+<div class="text-on-primary">
+<span class="inline-block px-3 py-1 bg-secondary-container text-on-secondary-container font-label-caps text-label-caps rounded-full mb-stack-md">Comprehensive Guidance</span>
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-stack-sm text-white">Your Pathway to a Medical Career.</h1>
+<p class="font-body-lg text-body-lg text-surface-dim mb-stack-lg max-w-lg">We simplify the complex process of securing medical university admissions abroad. From selecting the right university to landing safely on campus, our expert counselors are with you every step.</p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-secondary text-on-secondary font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-lg" href="#counseling-form">Book Free Counseling</a>
+<a class="border border-outline-variant text-on-primary font-label-caps text-label-caps px-8 py-4 rounded-DEFAULT hover:bg-surface-container-highest hover:text-primary transition-colors" href="#journey-timeline">View the Process</a>
+</div>
+</div>
+<div class="relative h-96 md:h-[500px] rounded-xl overflow-hidden shadow-2xl border-4 border-surface-container-lowest/10">
+<img alt="Medical Counseling" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGeikhelrkpjrBpfcS1BtAEIb90tIpXhSjZImDT0FszoeUVLqCK4jRneEaknxgCJDYzhMF7JwlzLnBeEqr6AW2-KE3wchvitNoJDzYN8oJBqbjlv2snmVV9XUlfPisvKRfCHB20slFv9_SlBRWs7jP-310_b5SGZ-LX9hGPny9m8lfHRvenJZeIpJ_qDVlgD0Tu8Qh9lkiZQlzEe-565fac7PHTb0vdIURqdlbtQcls4vNw8Gre_FRnNDN2-Vpp5PcYjLVvBHSjuJm"/>
+</div>
+</div>
+</section>
+<!-- Journey Timeline Section -->
+<section class="py-section-gap bg-surface-bright" id="journey-timeline">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="text-center mb-section-gap">
+<h2 class="font-headline-md text-headline-md text-primary mb-stack-sm">The Admission Journey</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">A structured, transparent, and hassle-free process designed to get you from aspiration to matriculation.</p>
+</div>
+<div class="relative">
+<!-- Vertical Line connecting steps (Desktop) -->
+<div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-surface-container-high -translate-x-1/2"></div>
+<div class="space-y-stack-lg md:space-y-0">
+<!-- Step 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between mb-section-gap">
+<div class="md:w-5/12 text-center md:text-right mb-stack-md md:mb-0">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">University Selection</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We assess your academic profile, budget, and preferences to shortlist the best NMC-approved universities globally.</p>
+<ul class="mt-4 space-y-2 inline-block text-left">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Profile Evaluation</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Budget Planning</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> University Shortlisting</li>
+</ul>
+</div>
+<div class="md:w-2/12 flex justify-center z-10 mb-stack-md md:mb-0">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg border-4 border-surface-bright">
+<span class="material-symbols-outlined icon-fill text-2xl">account_balance</span>
+</div>
+</div>
+<div class="md:w-5/12">
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<img alt="University Selection" class="w-full h-48 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoZzLnBP_9j_PnIvc9bnHsq6VL9d8mwRZQu8KS0_2MwiOzrq86rOctuuqOdiFqC9QiXgvTYgObG9Z1YfFVbdTdWCdu9BxtWBhS4lEsY-Zxnd-eEWYPTmIabEd5LDTiilfb0_iXM1c4ispOJ1A05VoAaxcV-w-wxmKVGkWOzQqlZcNbhVvu92GDLIFnKXY7vKpaEHClJsrxHwElHS3lmHIsKc0VL8Jgywf21rNCg8-W7gkSFlHANtO5O7mkk093Ha47ljFacDaOqAcl"/>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between mb-section-gap">
+<div class="md:w-5/12 text-center md:text-left mb-stack-md md:mb-0">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Application &amp; Admission</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Handling the intricate paperwork. We ensure all documents are perfectly aligned with the university's requirements to secure your admission letter.</p>
+<ul class="mt-4 space-y-2 inline-block text-left">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Document Collation</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Application Submission</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Securing Offer Letter</li>
+</ul>
+</div>
+<div class="md:w-2/12 flex justify-center z-10 mb-stack-md md:mb-0">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg border-4 border-surface-bright">
+<span class="material-symbols-outlined icon-fill text-2xl">edit_document</span>
+</div>
+</div>
+<div class="md:w-5/12">
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<img alt="Admission Process" class="w-full h-48 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXRHUFeahzkBy-WcfuvDINHXehssSbFOTKP5KyybkeLy8hkwQtP98XwmmjyeilwU2eqri77uoE5SU0C6X2-mQA9swFqutGMRSwsKy-WEGoo9GgZAzqBk2XlGD1DEdMtag8qoGAsbbfs2YjkWTfjOZpUsIn28Uf-iBaHVPJdfwbGJeCCYafrSHCB8F9mhyszzbQvoYQfHZfUWH5m3t0zMse_CAEncH312VhJqPi0PNXR1iUNegBxXJ_OUArdunUmWlhk6wT4pR7Z642"/>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between mb-section-gap">
+<div class="md:w-5/12 text-center md:text-right mb-stack-md md:mb-0">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Visa Processing</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Navigating embassy protocols with 100% precision. We prepare you for visa interviews and manage all immigration documentation.</p>
+<ul class="mt-4 space-y-2 inline-block text-left">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Visa File Preparation</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Interview Coaching</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Embassy Coordination</li>
+</ul>
+</div>
+<div class="md:w-2/12 flex justify-center z-10 mb-stack-md md:mb-0">
+<div class="w-16 h-16 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-lg border-4 border-surface-bright">
+<span class="material-symbols-outlined icon-fill text-2xl">flight_takeoff</span>
+</div>
+</div>
+<div class="md:w-5/12">
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<img alt="Visa Assistance" class="w-full h-48 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbL6UAbjEOaJwrwNTuRtx6OeCp0L48pVUEg8cpYcbWNDxwi_MFhEChZE6zVnbm18eLns2Ytu8XW9vvMX6NgsMWlobonNL0bcRSH2_R06wmKBXEnByW4b28wRAK0baoP8FBAuQsOZeV5GP3grwRSXWH_clwNuShaDt-JQMZ9zcL0Xn8cRLZjICkzAy4lhKEj76DGNfq6nMKTRDAAFGDs6X_4e5gTbXfvfGx6chNtcfoJtEg3_r0OqJCWClMTXA8OxJtVFqOVsde9M4G"/>
+</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between">
+<div class="md:w-5/12 text-center md:text-left mb-stack-md md:mb-0">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-stack-sm">Post-Arrival Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Our support doesn't end at boarding. We ensure a smooth transition with airport pickups, hostel arrangements, and local orientation.</p>
+<ul class="mt-4 space-y-2 inline-block text-left">
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Airport Pickup</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Accommodation Setup</li>
+<li class="flex items-center gap-2 font-body-md text-body-md text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">check_circle</span> Campus Orientation</li>
+</ul>
+</div>
+<div class="md:w-2/12 flex justify-center z-10 mb-stack-md md:mb-0">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-lg border-4 border-surface-bright">
+<span class="material-symbols-outlined icon-fill text-2xl">where_to_vote</span>
+</div>
+</div>
+<div class="md:w-5/12">
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow">
+<img alt="Post Arrival" class="w-full h-48 object-cover rounded-lg mb-4" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCHZDVk-V0zLIF08LgANIdyuvEHu8RBCUCaO8Y4zXWZVEBhyXI1PrIkRFUOTxpi_PZ0G0n0x0GN-2ec4cjZz3fZp8bM4qJjtgftzrQe6kiMTmwGisw9oDMll2i5r-zofVMYiJulkSWAIQC-pDxYCKbXEKWSCzKBs4EEklk-pIv0Sc9KnMxGXDUJdZTMvgm1MTmHE8pUHS0lE2wuHv5ZMzpOL7JmuSs1spOaIVilohHL9RzEonS2u8K0V5ifor-C4RBnT_ND4MP7-Cc"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Counseling Form Section (Bento Grid Style) -->
+<section class="py-section-gap bg-surface-container" id="counseling-form">
+<div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Form Container -->
+<div class="lg:col-span-7 bg-surface-container-lowest p-margin-mobile md:p-stack-lg rounded-xl shadow-md border border-[#c4c6d2]">
+<div class="mb-stack-lg">
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Request Free Counseling</h2>
+<p class="font-body-md text-body-md text-[#434750]">Fill out the details below, and our expert medical counselors will get in touch to map out your journey.</p>
+</div>
+<form id="inline-counseling-form" class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 font-semibold" for="firstName">First Name *</label>
+<input class="w-full px-4 py-3 rounded-DEFAULT border border-[#c4c6d2] bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md text-on-surface outline-none" id="firstName" placeholder="John" required type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 font-semibold" for="lastName">Last Name *</label>
+<input class="w-full px-4 py-3 rounded-DEFAULT border border-[#c4c6d2] bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md text-on-surface outline-none" id="lastName" placeholder="Doe" required type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 font-semibold" for="email">Email Address *</label>
+<input class="w-full px-4 py-3 rounded-DEFAULT border border-[#c4c6d2] bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md text-on-surface outline-none" id="email" placeholder="john@example.com" required type="email"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 font-semibold" for="phone">Phone Number *</label>
+<input class="w-full px-4 py-3 rounded-DEFAULT border border-[#c4c6d2] bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md text-on-surface outline-none" id="phone" placeholder="+91 XXXXX XXXXX" required type="tel"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface mb-2 font-semibold" for="neetScore">Estimated NEET Score (Optional)</label>
+<input class="w-full px-4 py-3 rounded-DEFAULT border border-[#c4c6d2] bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all font-body-md text-body-md text-on-surface outline-none" id="neetScore" placeholder="e.g. 450" type="number"/>
+</div>
+<div id="inline-success-msg" class="hidden p-4 bg-secondary/15 text-secondary border border-secondary/20 rounded flex items-center gap-3">
+    <span class="material-symbols-outlined text-xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+    <span class="text-sm font-semibold">Your inquiry has been submitted successfully! We'll call you soon.</span>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-label-caps text-label-caps px-6 py-4 rounded-DEFAULT hover:bg-secondary-fixed-dim hover:text-on-secondary-fixed transition-colors shadow-sm font-bold" type="submit">
+                                Submit Request
+                            </button>
+<p class="text-xs text-center text-[#434750] mt-4">We respect your privacy. Your data is secure with us.</p>
+</form>
+</div>
+<!-- Info/Contact Bento -->
+<div class="lg:col-span-5 flex flex-col gap-gutter">
+<!-- Expert Profile Card -->
+<div class="bg-surface-container-lowest p-stack-lg rounded-xl shadow-sm border border-outline-variant/20 flex-1 flex flex-col justify-center text-center">
+<div class="relative w-24 h-24 mx-auto mb-4">
+<div class="absolute inset-0 rounded-full border-4 border-secondary opacity-20"></div>
+<img alt="Dr. Saleem" class="w-full h-full rounded-full object-cover border-2 border-surface-bright shadow-sm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRc_t-lpXMJu0Y3i9qQR0IT7Ox0M8UI09LF5rUArwSx-TyKSAbZPuY2qkxU_LLs-6wxIjLn8_QMGkS-FVDVMTJPJpNPaqAdpfes8ORMeWfNpVK8SXAHIixKiKGYJ5HZDhXEgms6DtJWUjRwsZfaPVokHyNNQaR_n2ISwviNQr_mVW_DJ2MKU-24s704XwxS4MM96nccTmXRkcvfO8eCJOs8npYc-rEP4irKHNNrayqyyvwz4v0-dfygjL9JL53B2_JdvhFRJ9IhrKx"/>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Dr. Saleem</h3>
+<span class="inline-block bg-primary text-on-primary text-xs px-2 py-1 rounded mx-auto mt-2 mb-4 font-label-caps font-semibold">Director / Head Counselor</span>
+<p class="font-body-md text-body-md text-[#434750] italic">"Guided by experienced medical professionals who understand your dream."</p>
+<p class="font-body-sm text-sm text-[#434750] mt-2">(Safdarjung Hospital, Delhi)</p>
+</div>
+<!-- Contact Quick Card -->
+<div class="bg-primary text-on-primary p-stack-lg rounded-xl shadow-md flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-inverse-primary">support_agent</span>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-inverse-primary mb-1">Immediate Assistance</p>
+<a class="font-headline-sm text-headline-sm hover:underline text-white font-bold" href="tel:7404868284">7404868284</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-primary dark:bg-on-background full-width bottom-0">
+<div class="w-full py-stack-lg px-margin-mobile md:px-gutter grid grid-cols-1 md:grid-cols-3 gap-stack-lg max-w-container-max mx-auto">
+<!-- Brand / Copyright -->
+<div class="flex flex-col gap-4">
+<div class="font-headline-sm text-headline-sm text-white flex items-center gap-2">
+<span class="material-symbols-outlined icon-fill">medical_services</span>
+                    MBBS Abroad
+                </div>
+<p class="font-body-md text-body-md text-on-primary dark:text-surface-bright opacity-80">
+                    © 2024 MBBS Admission Abroad. All Rights Reserved.
+                </p>
+</div>
+<!-- Links Column 1 -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim underline-on-hover transition-all" href="universities.html">NMC Approved Universities</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim underline-on-hover transition-all" href="services.html#journey-timeline">Visa Assistance</a>
+<a class="font-body-md text-body-md text-secondary-fixed-dim font-bold underline-on-hover transition-all" href="services.html">Admission Support</a>
+</div>
+<!-- Links Column 2 -->
+<div class="flex flex-col gap-3">
+<a class="font-body-md text-body-md text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim underline-on-hover transition-all" href="contact.html">Contact Us</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim opacity-80 hover:opacity-100 hover:text-secondary-fixed-dim underline-on-hover transition-all" href="#">Privacy Policy</a>
+</div>
+</div>
+</footer>
+<script src="app.js"></script>
+<script>
+    // Handle local page form submission
+    document.getElementById('inline-counseling-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        document.getElementById('inline-success-msg').classList.remove('hidden');
+        this.reset();
+        setTimeout(() => {
+            document.getElementById('inline-success-msg').classList.add('hidden');
+        }, 5000);
+    });
+</script>
+</body></html>
